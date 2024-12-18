@@ -7,4 +7,4 @@ A tool for exploring and analyzing Jupiter's CHAOS limit orders on Solana.
 - Decode order details (maker, input token, output token)
 - Analyze orderbook data
 
-## Setup 
+## Setup
