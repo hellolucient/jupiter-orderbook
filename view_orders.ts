@@ -23,7 +23,7 @@ async function getLimitOrderDetails() {
             
             // Decode base64 instruction data
             const instructionData = Uint8Array.from(
-                Buffer.from(orderInstruction.data, 'base64')
+                Buffer.from(orderInstruction.data.buffer, orderInstruction.data.byteOffset, orderInstruction.data.byteLength)
             );
             
             // Create a DataView to read the values
